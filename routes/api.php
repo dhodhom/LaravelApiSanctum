@@ -13,4 +13,4 @@ Route::prefix('v1')->group(function(){
     Route::get('article/{id}', [App\Http\Controllers\API\v1\ArticleController::class, 'show']);
     Route::put('article/{id}', [App\Http\Controllers\API\v1\ArticleController::class, 'update']);
     Route::delete('article/{id}', [App\Http\Controllers\API\v1\ArticleController::class, 'destroy']);
-})->middleware('auth:sanctum');
+});
